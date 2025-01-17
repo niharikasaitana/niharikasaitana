@@ -94,27 +94,27 @@
                         <button type="button" class="fliter" [ngClass]="{' selectedfilter': selectedFliter == 'cheaper' }" (click)="fliter('cheaper')"> cheaper </button>
                         <button type="button" class="fliter "  [ngClass]="{' selectedfilter': selectedFliter == 'faster' }" (click)="fliter('faster')"> Faster </button>
                         <button type="button" class="fliter "  [ngClass]="{' selectedfilter': selectedFliter == 'Convenice' }" (click)="fliter('convenice')"> Convenice </button>
-                        <button type="button" class="fliterImg" (click)=" fliterVechiletype('AUTO')" *ngIf="!selectedVechileType.includes('AUTO')"> <img src="../../assets/Auto_fliter.svg" alt=""></button>
-                        <button type="button" class="fliterImg" (click)=" fliterVechiletype('AUTO')" *ngIf="selectedVechileType.includes('AUTO')"> <img src="../../assets/Auto.svg" alt=""></button>
-                        <button type="button" class="fliterImg" (click)=" fliterVechiletype('BIKE')" *ngIf="!selectedVechileType.includes('BIKE')"> <img src="../../assets/Moto_fliter.svg" alt=""></button>
-                        <button type="button" class="fliterImg" (click)=" fliterVechiletype('BIKE')" *ngIf="selectedVechileType.includes('BIKE')"> <img src="../../assets/bike.svg" alt=""></button>
-                        <button type="button" class="fliterImg" (click)=" fliterVechiletype('CAB')" *ngIf="!selectedVechileType.includes('CAB')"> <img src="../../assets/Cab_fliter.svg" alt=""></button>
+                        <button type="button" class="fliterImg" (click)=" fliterVechiletype('AUTO')" *ngIf="!selectedVechileType.includes('AUTO')"> <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/Auto_fliter.svg" alt=""></button>
+                        <button type="button" class="fliterImg" (click)=" fliterVechiletype('AUTO')" *ngIf="selectedVechileType.includes('AUTO')"> <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/Auto.svg" alt=""></button>
+                        <button type="button" class="fliterImg" (click)=" fliterVechiletype('BIKE')" *ngIf="!selectedVechileType.includes('BIKE')"> <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/Moto_fliter.svg" alt=""></button>
+                        <button type="button" class="fliterImg" (click)=" fliterVechiletype('BIKE')" *ngIf="selectedVechileType.includes('BIKE')"> <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/assets/bike.svg" alt=""></button>
+                        <button type="button" class="fliterImg" (click)=" fliterVechiletype('CAB')" *ngIf="!selectedVechileType.includes('CAB')"> <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/Cab_fliter.svg" alt=""></button>
                        
                       
-                        <button type="button" class="fliterImg" (click)=" fliterVechiletype('CAB')" *ngIf="selectedVechileType.includes('CAB')"> <img src="../../assets/Cab.svg" alt=""></button>
+                        <button type="button" class="fliterImg" (click)=" fliterVechiletype('CAB')" *ngIf="selectedVechileType.includes('CAB')"> <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/Cab.svg" alt=""></button>
                     </div>
 
                     <div *ngFor="let ride of ridesList;let index = index" class="ridesCard" (click)="ridedeatils(index)">
                         <div class="calendImg">
-                            <img src="../../assets/recentcalendar.svg" alt="">
+                            <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/recentcalendar.svg" alt="">
                             <span> {{ride.dateTime}} </span>
                         </div>
                         <div class="ridedeatils">
                           
                             <span class="detailsspan1"> 
-                                <img src="../../assets/Auto.svg" alt="" *ngIf=" ride.vechileType == 'AUTO' " class="vechileImg">
-                                <img src="../../assets/bike.svg" alt="" *ngIf=" ride.vechileType == 'BIKE' " class="vechileImg">
-                                <img src="../../assets/Cab.svg" alt="" *ngIf=" ride.vechileType != 'BIKE' &&  ride.vechileType != 'AUTO' " class="vechileImg">
+                                <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/Auto.svg" alt="" *ngIf=" ride.vechileType == 'AUTO' " class="vechileImg">
+                                <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/bike.svg" alt="" *ngIf=" ride.vechileType == 'BIKE' " class="vechileImg">
+                                <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/Cab.svg" alt="" *ngIf=" ride.vechileType != 'BIKE' &&  ride.vechileType != 'AUTO' " class="vechileImg">
                               
                             </span>
                            <span> {{ride.Time}} Mins</span>
@@ -123,11 +123,11 @@
                         <hr>
                         <div *ngIf="  ride.vechileType == 'BIKE'  ||  ride.vechileType == 'AUTO' " class="bikevechile">
                             {{ride.vechileType}}
-                            <img src="../../assets/driver_black.png" alt="" class="direverImg">
+                            <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/driver_black.png" alt="" class="direverImg">
                           <span class="direverName"> {{ride.driverName | titlecase }}</span> 
 
                           <span class="star_sapn">
-                            <img src="../../assets/star.png" alt="" class="starimg">
+                            <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/star.png" alt="" class="starimg">
                             <span class="direverName"> {{ride.rating | decmialpipe:2  }}</span>  
                           </span>
                          
@@ -135,11 +135,11 @@
                         </div>
                         <div class="div_vechiletpe" *ngIf="  ride.vechileType != 'BIKE' &&  ride.vechileType != 'AUTO' ">
                             {{ride.vechileType}} 
-                            <img src="../../assets/driver_black.png" alt="" class="direverImg">
+                            <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/driver_black.png" alt="" class="direverImg">
                             <span class="direverName"> {{ride.driverName | titlecase }}</span>  
 
                             <span  class="star_sapn">
-                                <img src="../../assets/star.png" alt="" class="starimg">
+                                <img src="https://github.com/niharikasaitana/niharikasaitana/blob/main/src/assets/star.png" alt="" class="starimg">
                                 <span class="direverName"> {{ride.rating | decmialpipe:2  }}</span>
                             </span>
   

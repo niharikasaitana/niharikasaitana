@@ -7,18 +7,18 @@
 
             <div class="col-md-6">
                 <div>
-                    <img src="../../assets/backarrow.png" alt="" routerLink="/home" class="backbtn">
+                    <img src="assets/backarrow.png" alt="" routerLink="/home" class="backbtn">
                 </div>
 
 
                 <div class="imgDetails">
-                    <img src="../../assets/Auto.svg" alt="" class="vechileImg"
+                    <img src="assets/Auto.svg" alt="" class="vechileImg"
                         *ngIf=" ridedeatils.vechileType == 'AUTO' ">
-                    <img src="../../assets/bike.svg" alt="" class="vechileImg"
+                    <img src="assets/bike.svg" alt="" class="vechileImg"
                         *ngIf=" ridedeatils.vechileType == 'BIKE' ">
-                    <img src="../../assets/CAB-SEDAN" alt="" class="vechileImg"
+                    <img src="assets/CAB-SEDAN" alt="" class="vechileImg"
                         *ngIf=" ridedeatils.vechileType == 'CAB-SEDAN' ">
-                    <img src="../../assets/Cab.svg" alt="" class="vechileImg"
+                    <img src="assets/Cab.svg" alt="" class="vechileImg"
                         *ngIf=" ridedeatils.vechileType == 'CAB-SUV'">
                     <span class="detailsVechileType"> {{ ridedeatils.vechileType }} - {{ placedeatils.Adultcount }}
                         passengers
@@ -42,9 +42,9 @@
                     <div class="fareheading_div">
                         <span class="fareHeading"> fare </span>
                         <span class="fare"> ₹ {{ ridedeatils.fare | decmialpipe:2}}
-                            <img src="../../assets/Whitedown_arrow.svg" alt="" class="arrowImg backbtn"
+                            <img src="assets/Whitedown_arrow.svg" alt="" class="arrowImg backbtn"
                                 *ngIf="!showbreakup" (click)="showbreakup= true">
-                            <img src="../../assets/Whiteup_arrow.svg" alt="" class="arrowImg backbtn"
+                            <img src="assets/Whiteup_arrow.svg" alt="" class="arrowImg backbtn"
                                 *ngIf="showbreakup" (click)="showbreakup= false">
                         </span>
                     </div>
@@ -153,7 +153,7 @@
             </div>
             <div class="popupsubHeading">
                 <div class="img_success">
-                     <img src="../../assets/Success.svg" class="paymentimg" alt="">
+                     <img src="assets/Success.svg" class="paymentimg" alt="">
                 </div>
             </div>
 

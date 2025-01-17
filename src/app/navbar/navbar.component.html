@@ -1,6 +1,6 @@
 <div class="">
     <div class=" row_div">
-        <img src="../../assets/logo.jpg" alt="" class="log_img">
+        <img src="assets/logo.jpg" alt="" class="log_img">
         <span class="first_half">
 
             <span class="first_half_span">
@@ -17,7 +17,7 @@
             <span class="second_ride" (click)="ssearcShipments()">  Search Delivery Services </span>
 
         </span>
-        <img src="../../assets/avatar.png" alt="" id="log_img_profile" class=" log_img" [class.navdisable]="sidebarShow"
+        <img src="assets/avatar.png" alt="" id="log_img_profile" class=" log_img" [class.navdisable]="sidebarShow"
             (click)="opensettings()" *ngIf="loginDataRetrived">
 
     </div>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="row bgcolor ">
                     <div class="imagetumb">
-                        <img src="../../assets/avatar.png" alt="" loading="lazy" class="imgava" />
+                        <img src="assets/avatar.png" alt="" loading="lazy" class="imgava" />
                     </div>
                     <span *ngIf="loginDataRetrived" class="detailsSpan">
                         <span class="name"> {{ loginData!.firstName }} {{ loginData!.lastName }}</span>
